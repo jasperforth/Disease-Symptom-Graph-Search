@@ -1,0 +1,106 @@
+DBMS_project5_ws2425/
+├── Dockerfile.neo4j
+├── LICENSE
+├── Makefile
+├── README.md
+├── backend/
+│   ├── Dockerfile
+│   ├── Dockerfile-streamlit
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── package-lock.json
+│   │   │   ├── package.json
+│   │   │   ├── search_multiple_unified.py
+│   │   │   ├── symptom_suggestions.py
+│   │   │   └── test_endpoint.py
+│   │   ├── core/
+│   │   │   └── config.py
+│   │   ├── database/
+│   │   │   └── connection.py
+│   │   ├── main.py
+│   │   ├── models/
+│   │   │   └── schemas.py
+│   │   ├── services/
+│   │   │   ├── disease_service.py
+│   │   │   └── scoring.py
+│   │   └── utils/
+│   │       └── logger.py
+│   ├── environment.yml
+│   ├── requirements.txt
+│   ├── scripts/
+│   │   ├── compute_metric_bounds.py
+│   │   ├── data/
+│   │   │   └── logs/
+│   │   ├── entrypoint.sh
+│   │   ├── parameter_search.py
+│   │   ├── process_data.py
+│   │   └── streamlit_visualization.py
+│   └── tests/
+│       ├── data/
+│       │   └── logs/
+│       │       └── backend/
+│       │           └── app.log
+│       ├── test_routes.py
+│       ├── test_scoring.py
+│       ├── test_search.py
+│       └── test_service.py
+├── data/
+│   ├── 41467_2014_BFncomms5212_MOESM1043_ESM.txt
+│   ├── 41467_2014_BFncomms5212_MOESM1044_ESM.txt
+│   ├── 41467_2014_BFncomms5212_MOESM1045_ESM.txt
+│   ├── experiments_param_search/
+│   │   └── parameter_search_comparison_topk_10.csv
+│   ├── logs/
+│   │   └── backend/
+│   │       └── app.log
+│   ├── neo4j_data/
+│   │   ├── databases/
+│   │   │   ├── store_lock
+│   │   ├── neo4j_dump/
+│   │   ├── server_id
+│   ├── neo4j_dumps/
+│   │   ├── neo4j.dump
+│   ├── neo4j_import/
+│   │   ├── diseases.csv
+│   │   ├── relationships.csv
+│   │   └── symptoms.csv
+│   ├── neo4j_logs/
+│   │   ├── debug.log
+│   │   ├── http.log
+│   │   ├── neo4j.log
+│   │   ├── query.log
+│   │   └── security.log
+│   └── preprocessed/
+│       ├── metric_bounds.json
+│       └── metric_bounds_full.json
+├── docker-compose.prod.yml
+├── docker-compose.yml
+├── frontend/
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public/
+│   │   ├── index.html
+│   │   └── vite.svg
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── assets/
+│   │   │   └── react.svg
+│   │   ├── components/
+│   │   │   ├── DiseaseList.css
+│   │   │   ├── DiseaseList.jsx
+│   │   │   ├── MultiSymptomInput.css
+│   │   │   ├── MultiSymptomInput.jsx
+│   │   ├── main.jsx
+│   │   ├── styles/
+│   │   │   └── App.css
+│   │   └── utils/
+│   │       └── api.js
+│   └── vite.config.js
+├── gen_project_structure.py
+├── init_neo4j.sh
+├── parameter_search_results.csv
+└── project_structure.txt

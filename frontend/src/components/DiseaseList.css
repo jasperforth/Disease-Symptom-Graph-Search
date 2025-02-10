@@ -1,0 +1,66 @@
+/* ./frontend/src/components/DiseaseList.css */
+
+.disease-list {
+    opacity: 0; /* Initial state */
+    transform: translateY(20px); /* Slight downward shift */
+    transition: opacity 0.2s ease-in, transform 0.2s ease-in; /* Transition for fade-in */
+  }
+  
+  .disease-list.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+  }
+  
+  .disease-list h2 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  /* Disease Table */
+  .disease-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .disease-table th,
+  .disease-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .disease-table th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .disease-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .disease-row {
+    transition: opacity 1s ease-out; /* Transition for fade-out */
+  }
+  
+  .disease-row.fade-in {
+    opacity: 1; /* Fully visible during fade-in */
+  }
+  
+  .disease-row.fade-out {
+    transition: opacity 1s ease-out; /* Smooth transition to reduced opacity */
+  }
+  
+  /* Disease container with fade-in animation */
+  .disease-container {
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Slight downward shift */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth fade and movement */
+  }
+  
+  .disease-container.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+  }
+  

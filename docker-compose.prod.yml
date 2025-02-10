@@ -1,0 +1,22 @@
+services:
+  neo4j:
+    image: neo4j-prod:with-data
+    container_name: disease-symptom-neo4j-prod2
+    ports:
+      - "7474:7474"  # HTTP
+      - "7687:7687"  # Bolt
+    environment:
+      - NEO4J_AUTH=${NEO4J_AUTH}
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:7474 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+
+# export image
+#docker save -o ./data/my-neo4j-with-data.tar my-neo4j:with-data
+
+# import image
+#docker load -i ./data/my-neo4j-with-data.tar

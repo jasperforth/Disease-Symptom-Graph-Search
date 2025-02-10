@@ -1,0 +1,10 @@
+FROM neo4j:5.26.0
+
+# Create the directory for the dump file
+RUN mkdir -p /var/lib/neo4j/import/neo4j_dump
+
+# Copy the database dump file into the directory
+COPY ./data/neo4j_dumps/neo4j.dump /var/lib/neo4j/import/neo4j_dump/
+
+# Load the database using the dump file
+RUN neo4j-admin database load neo4j --from-path=/var/lib/neo4j/import/neo4j_dump --overwrite-destination=true

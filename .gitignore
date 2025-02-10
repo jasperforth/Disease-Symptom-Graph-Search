@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+
+# Node.js
+node_modules/
+
+# Vite (React)
+frontend/.vite/deps/_metadata.json
+frontend/.vite/deps/package.json
+dist/
+
+# Environment Variables
+.env
+backend/.env
+frontend/.env
+
+# macOS
+.DS_Store
+
+# IDEs and Editors
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Docker
+docker-compose.override.yml
+docker-compose.override.*.yml
+*.log
+docker/*.log
+
+# Neo4j
+data/neo4j_data/
+data/neo4j_logs/
+*.archive.dump
+
+# Large Files
+*.tar
+*.zip
+
+# Data 
+# Exclude experimental parameter search results and other large datasets
+data/experiments_param_search/
+data/logs/
+
+# Coverage Reports
+coverage/
+*.lcov
+
+# Generated Documentation
+docs/_build/
+
+# Temporary Development Artifacts
+*.bak
+*.old
+*.orig
+
+# Specific to React-Vite
+frontend/public/*.gz
+frontend/public/*.br
+frontend/src/**/*.test.*
+
+# Excluded Artifacts
+.vite/
+

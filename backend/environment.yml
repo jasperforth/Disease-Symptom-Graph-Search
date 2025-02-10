@@ -1,0 +1,20 @@
+name: disease-symptom-app-py312
+channels:
+  - defaults
+dependencies:
+  - fastapi
+  - httpx
+  - jupyter
+  - neo4j-python-driver
+  - python-dotenv
+  - python=3.12
+  - seaborn
+  - tqdm
+  - uvicorn
+  - joblib
+  - scipy
+  - streamlit
+  - watchdog
+  - pytest
+  - conda-lock
+

@@ -1,0 +1,311 @@
+/* ./frontend/src/styles/App.css */
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid #ddd; */
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+.header-left {
+  display: flex;
+}
+
+.app-description {
+  position: relative;
+  left: 3.1%;
+  /* height: 10%; */
+  transform: translateX(-10%);
+  font-style: bold;
+  font-size: 16px;
+  font-style: large;
+  color: #567596;
+  cursor: pointer;
+  /* text-align: left; */
+
+  /* padding: 5px 10px; */
+  /* background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.app-description:hover {
+  color: #0c4078;
+}
+
+.settings-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(140, 136, 136);
+  transition: color 0.5s ease;
+}
+
+.settings-button:hover {
+  color: #000;
+}
+
+/* Backdrop and Popover Styles */
+.settings-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  z-index: 999; /* Ensure backdrop is behind the popover but above normal content */
+}
+
+.info-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 999;
+}
+
+/* Info Popover */
+.info-popover {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  z-index: 1000;
+  max-width: 90vw; 
+  width: 1175px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.settings-popover {
+  position: absolute;
+  top: 60px;  
+  right: 40px; /* position near the button, tweak to match your design */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  z-index: 1000; /* above backdrop */
+  width: 220px;   /* small popover width */
+  text-align: left;
+}
+
+
+
+.close-settings-button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.close-settings-button:hover {
+  background-color: #0056b3;
+}
+
+/* New Styles for Two-Column Layout */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px; /* Space between columns */
+}
+
+/* Left Column Styles */
+.left-column {
+  flex: 1; /* Takes up remaining space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between elements in left column */
+}
+
+/* Right Column Styles */
+.right-column {
+  flex: 1; /* Takes up remaining space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between elements in right column */
+}
+
+/* Responsive Design: Stack columns on smaller screens */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
+
+
+/* Responsive Design: Stack header elements on smaller screens */
+@media (max-width: 768px) {
+  .header-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Adjust info-popover if needed for mobile */
+  .info-popover {
+    width: 80%; /* Increase width on smaller screens */
+  }
+}
+
+/* TODO: ADJUST AND TUNE THE DARK MODE */
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+.dark-mode .app-container {
+  background-color: #1e1e1e; /* Slightly lighter than body */
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .app-header {
+  border-bottom: 1px solid #333;
+  color: #e0e0e0;
+}
+
+.dark-mode .app-title {
+  color: #ffffff;
+}
+
+.dark-mode .app-description {
+  color: #bbbbbb;
+}
+
+.dark-mode .settings-button {
+  color: #bbbbbb;
+}
+
+.dark-mode .settings-button:hover {
+  color: #ffffff;
+}
+
+.dark-mode .info-popover,
+.dark-mode .settings-popover {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .close-settings-button {
+  background-color: #444;
+}
+
+.dark-mode .close-settings-button:hover {
+  background-color: #666;
+}
+
+.dark-mode .theme-toggle .toggle-label {
+  color: #e0e0e0;
+}
+
+.dark-mode .disease-list h2 {
+    color: #dad4d4; 
+  }
+
+ .dark-mode .disease-table th,
+ .dark-mode .disease-table td {
+    color: #cecbcb;      /* Light text color */
+    border-bottom: 1px solid #3b3737; /* Darker border */
+  }
+
+  .dark-mode .disease-table th {
+      background-color: #441956;  /* Dark header background */
+    }
+
+  .dark-mode .disease-table tr:hover {
+      background-color: #863ca4;  /* Hover state for rows */
+    }
+
+/* Toggle Switch Styles */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.toggle-label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+#dark-mode-toggle {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ccc;
+  outline: none;
+  border-radius: 20px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+#dark-mode-toggle:checked {
+  background: #4fbe79;
+}
+
+#dark-mode-toggle::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  background: #fff;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#dark-mode-toggle:checked::before {
+  left: 21px;
+}
+
+.app-container,
+.app-header,
+.info-popover,
+.settings-popover,
+.close-settings-button,
+.theme-toggle .toggle-label {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Transition for the toggle switch */
+#dark-mode-toggle,
+#dark-mode-toggle::before {
+  transition: background 0.3s ease, left 0.3s ease;
+}

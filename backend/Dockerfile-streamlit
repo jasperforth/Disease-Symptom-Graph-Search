@@ -1,0 +1,22 @@
+# backend/Dockerfile-streamlit
+FROM continuumio/miniconda3:latest
+
+# set working directory
+WORKDIR /app
+
+# copy environment file and create conda environment
+COPY environment.yml .
+RUN conda env create -f environment.yml
+
+# Set PATH and ensure /app is in PYTHONPATH
+ENV PATH=/opt/conda/envs/disease-symptom-app-py312/bin:$PATH
+ENV PYTHONPATH=/app
+
+# Copy app code
+COPY . /app/backend
+
+# Expose port for the FastAPI server
+EXPOSE 8501
+
+# Run streamlit on the evaluation script
+CMD ["streamlit", "run", "backend/scripts/streamlit_visualization.py", "--server.port", "8501", "--server.address", "0.0.0.0"]

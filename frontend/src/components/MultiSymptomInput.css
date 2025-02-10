@@ -1,0 +1,401 @@
+/* ./frontend/src/components/MultiSymptomInput.css */
+
+.multi-symptom-form h2 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.symptoms-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.symptom-entry {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.symptom-entry input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 8px;
+  font-size: 14px;
+  transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.symptom-entry input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.symptom-entry select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.symptom-entry select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.remove-button {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.5s ease;
+}
+
+.remove-button:hover {
+  color: #555;
+}
+
+.add-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 30px;
+  /* margin-bottom: 5px; */
+  transition: color 0.5s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.add-button:hover {
+  color: #0056b3;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  width: calc(75% - 45px);
+  margin-left: 30px;
+}
+
+.buttons-container.space-between {
+  justify-content: space-between;
+}
+
+/* Alignment Helper Classes */
+.centered-button {
+  margin: 0 auto;
+}
+
+.align-left {
+  justify-content: flex-start;
+}
+
+.align-right {
+  justify-content: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.clear-button,
+.show-related-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.clear-button:hover {
+  background-color: #c82333;
+}
+
+.show-related-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.show-related-button:hover {
+  background-color: #0069d9;
+}
+
+/* Suggestions Overlay */
+.suggestions-overlay {
+  position: fixed;
+  top: 48%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  display: none; /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.suggestions-overlay.active {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.suggestions-overlay h4 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.suggestions-overlay button {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 8px 18px;
+  margin: 6px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 14px;
+}
+
+.suggestions-overlay button:hover {
+  background-color: #e2e6ea;
+  color: #000;
+}
+
+/* Highlighted Button for "NO OTHER SYMPTOMS" */
+.highlighted-button {
+  background-color: #e9ecef; /* Soft gray background */
+  color: #495057;
+  font-weight: bold;
+}
+
+.highlighted-button:hover {
+  background-color: #ced4da; /* Slightly darker gray on hover */
+  color: #343a40;
+}
+
+/* Validation Error */
+.invalid-input {
+  border-color: #dc3545; /* Red border for invalid input */
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+.validation-error {
+  color: #dc3545;
+  font-size: 10px;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Fuzzy Search Suggestions */
+.suggestions {
+  list-style: none;
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 77%;
+  z-index: 10;
+}
+
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suggestion-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Related Suggestions Toggle Button */
+.related-suggestions-toggle {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.toggle-suggestions-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #bfdaf8;
+  color: rgb(5, 5, 5);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-suggestions-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Related Suggestions Window */
+.related-suggestions-window {
+  width: calc(100% - 168px);
+  margin-top:25px;
+  padding: 15px;
+  padding-bottom: 30px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.related-suggestions-window h4 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.related-suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 15px; /* Space between items */
+  justify-content: space-evenly
+}
+
+.related-suggestion-item {
+  padding: 8px 12px;
+  background-color: #bfdaf8;
+  color: rgb(2, 2, 2);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.related-suggestion-item:hover {
+  background-color: #0056b3;
+}
+
+/*dark mode*/
+.dark-mode .related-suggestions-window h4 {
+  color: #ccc; /* bright gray */
+}
+
+.dark-mode .symptom-entry input,
+.dark-mode .symptom-entry select {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.dark-mode .multi-symptom-form h2 {
+    color: #dad4d4;
+  }
+
+.dark-mode .related-suggestions-window {
+    background-color: #2c2c2c;
+    border: 1px solid #444;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  }
+
+
+.dark-mode .related-suggestion-item {
+    background-color: #863ca4;
+    color: #fff;
+    border: none;
+  }
+
+.dark-mode .related-suggestion-item:hover {
+    background-color: #5f2b7f;
+  }
+
+.dark-mode .toggle-suggestions-button,
+.dark-mode .clear-button,
+.dark-mode .show-related-button {
+  background-color: #863ca4;
+  color: #fff;
+  border: none;
+}
+
+.dark-mode .add-button {
+  background: none;
+  color: #863ca4;
+  border: none;
+}
+
+.dark-mode .add-button:hover {
+  color: #5f2b7f;
+}
+
+.dark-mode .toggle-suggestions-button:hover,
+.dark-mode .clear-button:hover,
+.dark-mode .show-related-button:hover {
+  background-color: #5f2b7f;
+}
+
+.dark-mode .suggestions {
+  background-color: #333;
+  border: 1px solid #555;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+}
+
+.dark-mode .suggestion-item {
+  color: #e0e0e0;
+}
+
+.dark-mode .suggestion-item:hover {
+  background-color: #444;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .buttons-container {
+    width: calc(100% - 100px); /* Adjust based on smaller select/remove button widths */
+    margin-left: 10px; /* Adjust accordingly */
+  }
+
+  .related-suggestions-window {
+    width: calc(100% - 171px); /* Same as .buttons-container */
+    margin-left: 5px; /* Same as .buttons-container */
+  }
+}
+
+@media (max-width: 600px) {
+  .related-suggestion-item {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

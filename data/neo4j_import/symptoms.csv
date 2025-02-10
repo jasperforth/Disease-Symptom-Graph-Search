@@ -1,0 +1,323 @@
+name,display_name,pubmed_occurrence
+body weight,Body Weight,147857
+pain,Pain,103168
+obesity,Obesity,100301
+anoxia,Anoxia,47351
+mental retardation,Mental Retardation,43883
+seizures,Seizures,36959
+diarrhea,Diarrhea,34850
+angina pectoris,Angina Pectoris,29473
+edema,Edema,29446
+birth weight,Birth Weight,29364
+fever,Fever,27734
+"pain, postoperative","Pain, Postoperative",22793
+deafness,Deafness,21470
+headache,Headache,20212
+vision disorders,Vision Disorders,19403
+weight loss,Weight Loss,18689
+weight gain,Weight Gain,18661
+proteinuria,Proteinuria,18604
+vomiting,Vomiting,17571
+psychophysiologic disorders,Psychophysiologic Disorders,16827
+urinary incontinence,Urinary Incontinence,16162
+fatigue,Fatigue,15975
+paralysis,Paralysis,15477
+blindness,Blindness,15199
+back pain,Back Pain,13385
+dyspnea,Dyspnea,12973
+hearing disorders,Hearing Disorders,12913
+sleep disorders,Sleep Disorders,12844
+memory disorders,Memory Disorders,12076
+nausea,Nausea,11643
+learning disorders,Learning Disorders,11489
+abdominal pain,Abdominal Pain,11450
+low back pain,Low Back Pain,11361
+"hearing loss, sensorineural","Hearing Loss, Sensorineural",11096
+cough,Cough,10577
+paraplegia,Paraplegia,10544
+dizziness,Dizziness,10308
+albuminuria,Albuminuria,10187
+coma,Coma,10094
+hemiplegia,Hemiplegia,9677
+facial paralysis,Facial Paralysis,9513
+speech disorders,Speech Disorders,9207
+constipation,Constipation,9201
+jaundice,Jaundice,8659
+"obesity, morbid","Obesity, Morbid",8445
+muscle weakness,Muscle Weakness,8320
+syncope,Syncope,8193
+hallucinations,Hallucinations,8094
+"urinary incontinence, stress","Urinary Incontinence, Stress",7916
+hypothermia,Hypothermia,7774
+aphasia,Aphasia,7771
+"abdomen, acute","Abdomen, Acute",7764
+muscular atrophy,Muscular Atrophy,7754
+chest pain,Chest Pain,7742
+vertigo,Vertigo,7698
+"angina, unstable","Angina, Unstable",7693
+pruritus,Pruritus,7494
+tremor,Tremor,7345
+neurologic manifestations,Neurologic Manifestations,7236
+ophthalmoplegia,Ophthalmoplegia,7078
+hypercapnia,Hypercapnia,6702
+overweight,Overweight,6660
+dyspepsia,Dyspepsia,6658
+hearing loss,Hearing Loss,6617
+quadriplegia,Quadriplegia,6461
+intermittent claudication,Intermittent Claudication,6418
+"diarrhea, infantile","Diarrhea, Infantile",6300
+neuralgia,Neuralgia,6081
+muscle spasticity,Muscle Spasticity,5975
+"urinary bladder, neurogenic","Urinary Bladder, Neurogenic",5973
+sleep deprivation,Sleep Deprivation,5941
+respiratory sounds,Respiratory Sounds,5870
+apnea,Apnea,5835
+ataxia,Ataxia,5800
+spasm,Spasm,5749
+amnesia,Amnesia,5710
+"purpura, thrombocytopenic","Purpura, Thrombocytopenic",5639
+dyslexia,Dyslexia,5549
+hyperalgesia,Hyperalgesia,5523
+"hearing loss, noise-induced","Hearing Loss, Noise-Induced",5455
+dystonia,Dystonia,5395
+amblyopia,Amblyopia,5240
+"pain, intractable","Pain, Intractable",5135
+language disorders,Language Disorders,5119
+"cardiac output, low","Cardiac Output, Low",5096
+tinnitus,Tinnitus,5038
+hyperventilation,Hyperventilation,4918
+paresthesia,Paresthesia,4711
+decerebrate state,Decerebrate State,4648
+perceptual disorders,Perceptual Disorders,4576
+delirium,Delirium,4573
+bulimia,Bulimia,4516
+hemoptysis,Hemoptysis,4496
+psychomotor disorders,Psychomotor Disorders,4424
+vocal cord paralysis,Vocal Cord Paralysis,4410
+myoclonus,Myoclonus,4304
+facial pain,Facial Pain,4301
+purpura,Purpura,4252
+"reflex, abnormal","Reflex, Abnormal",4190
+acute coronary syndrome,Acute Coronary Syndrome,4124
+paresis,Paresis,4102
+voice disorders,Voice Disorders,4043
+language development disorders,Language Development Disorders,3958
+sciatica,Sciatica,3869
+"purpura, thrombocytopenic, idiopathic","Purpura, Thrombocytopenic, Idiopathic",3857
+illusions,Illusions,3800
+diplopia,Diplopia,3752
+cyanosis,Cyanosis,3748
+anorexia,Anorexia,3616
+arthralgia,Arthralgia,3469
+hyperkinesis,Hyperkinesis,3387
+color vision defects,Color Vision Defects,3375
+cachexia,Cachexia,3369
+chorea,Chorea,3368
+neck pain,Neck Pain,3364
+confusion,Confusion,3297
+colic,Colic,3286
+unconsciousness,Unconsciousness,3274
+"purpura, thrombotic thrombocytopenic","Purpura, Thrombotic Thrombocytopenic",3274
+fever of unknown origin,Fever of Unknown Origin,3268
+sensation disorders,Sensation Disorders,3264
+hypergammaglobulinemia,Hypergammaglobulinemia,3242
+cerebellar ataxia,Cerebellar Ataxia,3235
+"purpura, schoenlein-henoch","Purpura, Schoenlein-Henoch",3213
+hirsutism,Hirsutism,3169
+eye manifestations,Eye Manifestations,3150
+psychomotor agitation,Psychomotor Agitation,2970
+pelvic pain,Pelvic Pain,2841
+snoring,Snoring,2815
+dysmenorrhea,Dysmenorrhea,2806
+fetal distress,Fetal Distress,2784
+stuttering,Stuttering,2780
+heart murmurs,Heart Murmurs,2771
+torticollis,Torticollis,2747
+skin manifestations,Skin Manifestations,2723
+"hearing loss, conductive","Hearing Loss, Conductive",2639
+thinness,Thinness,2616
+"gait disorders, neurologic","Gait Disorders, Neurologic",2574
+fetal hypoxia,Fetal Hypoxia,2556
+olfaction disorders,Olfaction Disorders,2476
+postoperative nausea and vomiting,Postoperative Nausea and Vomiting,2338
+muscle hypotonia,Muscle Hypotonia,2331
+scotoma,Scotoma,2232
+hemianopsia,Hemianopsia,2228
+persistent vegetative state,Persistent Vegetative State,2206
+catalepsy,Catalepsy,2200
+tetany,Tetany,2148
+shoulder pain,Shoulder Pain,2137
+"jaundice, obstructive","Jaundice, Obstructive",2136
+cerebrospinal fluid rhinorrhea,Cerebrospinal Fluid Rhinorrhea,2119
+toothache,Toothache,2089
+apraxias,Apraxias,2077
+motion sickness,Motion Sickness,2065
+hyperphagia,Hyperphagia,2052
+hyperoxia,Hyperoxia,2022
+hypesthesia,Hypesthesia,1953
+agnosia,Agnosia,1840
+oral hemorrhage,Oral Hemorrhage,1816
+"angina pectoris, variant","Angina Pectoris, Variant",1792
+hot flashes,Hot Flashes,1788
+muscle cramp,Muscle Cramp,1784
+hematemesis,Hematemesis,1779
+catatonia,Catatonia,1763
+virilism,Virilism,1753
+consciousness disorders,Consciousness Disorders,1745
+"vision, low","Vision, Low",1739
+polyuria,Polyuria,1679
+hydrops fetalis,Hydrops Fetalis,1661
+muscle rigidity,Muscle Rigidity,1649
+"supranuclear palsy, progressive","Supranuclear Palsy, Progressive",1591
+dysarthria,Dysarthria,1586
+horner syndrome,Horner Syndrome,1539
+hypoventilation,Hypoventilation,1511
+"hearing loss, bilateral","Hearing Loss, Bilateral",1502
+"urinary bladder, overactive","Urinary Bladder, Overactive",1490
+oral manifestations,Oral Manifestations,1485
+hoarseness,Hoarseness,1458
+fetal macrosomia,Fetal Macrosomia,1448
+heartburn,Heartburn,1440
+"hearing loss, sudden","Hearing Loss, Sudden",1409
+phantom limb,Phantom Limb,1370
+respiratory paralysis,Respiratory Paralysis,1331
+mobility limitation,Mobility Limitation,1329
+"aphasia, broca","Aphasia, Broca",1302
+articulation disorders,Articulation Disorders,1298
+communication disorders,Communication Disorders,1291
+asthenia,Asthenia,1278
+"syncope, vasovagal","Syncope, Vasovagal",1264
+athetosis,Athetosis,1241
+taste disorders,Taste Disorders,1209
+"akathisia, drug-induced","Akathisia, Drug-Induced",1174
+pseudophakia,Pseudophakia,1163
+tinea pedis,Tinea Pedis,1122
+hyperemesis gravidarum,Hyperemesis Gravidarum,1100
+trismus,Trismus,1091
+flatulence,Flatulence,1075
+hemoglobinuria,Hemoglobinuria,1071
+dyskinesias,Dyskinesias,1045
+mouth breathing,Mouth Breathing,1002
+presbycusis,Presbycusis,999
+myotonia,Myotonia,970
+fetal weight,Fetal Weight,953
+flushing,Flushing,949
+mental fatigue,Mental Fatigue,937
+oliguria,Oliguria,935
+ecchymosis,Ecchymosis,914
+cerebrospinal fluid otorrhea,Cerebrospinal Fluid Otorrhea,906
+halitosis,Halitosis,894
+gastroparesis,Gastroparesis,884
+anomia,Anomia,859
+hypokinesia,Hypokinesia,833
+hiccup,Hiccup,833
+auditory perceptual disorders,Auditory Perceptual Disorders,828
+mutism,Mutism,822
+"hearing loss, high-frequency","Hearing Loss, High-Frequency",786
+"dyslexia, acquired","Dyslexia, Acquired",783
+"aphasia, wernicke","Aphasia, Wernicke",782
+somatosensory disorders,Somatosensory Disorders,782
+hyperesthesia,Hyperesthesia,773
+"amnesia, retrograde","Amnesia, Retrograde",768
+agraphia,Agraphia,751
+sneezing,Sneezing,691
+muscle hypertonia,Muscle Hypertonia,688
+eye hemorrhage,Eye Hemorrhage,686
+hypocapnia,Hypocapnia,661
+pupil disorders,Pupil Disorders,595
+emaciation,Emaciation,587
+encopresis,Encopresis,576
+hemifacial spasm,Hemifacial Spasm,557
+cheyne-stokes respiration,Cheyne-Stokes Respiration,545
+fasciculation,Fasciculation,539
+"aging, premature","Aging, Premature",519
+tics,Tics,518
+earache,Earache,506
+respiratory aspiration,Respiratory Aspiration,498
+feminization,Feminization,485
+paraparesis,Paraparesis,472
+"edema, cardiac","Edema, Cardiac",435
+labor pain,Labor Pain,428
+"neuralgia, postherpetic","Neuralgia, Postherpetic",417
+waterhouse-friderichsen syndrome,Waterhouse-Friderichsen Syndrome,404
+"ophthalmoplegia, chronic progressive external","Ophthalmoplegia, Chronic Progressive External",385
+"blindness, cortical","Blindness, Cortical",378
+gagging,Gagging,376
+"hearing loss, central","Hearing Loss, Central",360
+photophobia,Photophobia,348
+dysphonia,Dysphonia,346
+"urinary incontinence, urge","Urinary Incontinence, Urge",340
+prostatism,Prostatism,321
+miosis,Miosis,320
+hyperacusis,Hyperacusis,315
+prosopagnosia,Prosopagnosia,310
+gait ataxia,Gait Ataxia,307
+"dyspnea, paroxysmal","Dyspnea, Paroxysmal",286
+flank pain,Flank Pain,278
+"reflex, babinski","Reflex, Babinski",272
+"paraparesis, spastic","Paraparesis, Spastic",270
+eructation,Eructation,264
+korsakoff syndrome,Korsakoff Syndrome,257
+cafe-au-lait spots,Cafe-au-Lait Spots,252
+nocturia,Nocturia,251
+"aphasia, primary progressive","Aphasia, Primary Progressive",249
+"hearing loss, unilateral","Hearing Loss, Unilateral",242
+aphonia,Aphonia,242
+hypercalciuria,Hypercalciuria,240
+aerophagy,Aerophagy,239
+pallor,Pallor,237
+glossalgia,Glossalgia,236
+"purpura, hyperglobulinemic","Purpura, Hyperglobulinemic",236
+meningism,Meningism,224
+"amnesia, transient global","Amnesia, Transient Global",224
+brown-sequard syndrome,Brown-Sequard Syndrome,223
+dysgeusia,Dysgeusia,222
+sarcopenia,Sarcopenia,217
+"vomiting, anticipatory","Vomiting, Anticipatory",214
+coprophagia,Coprophagia,209
+anisocoria,Anisocoria,208
+echolalia,Echolalia,202
+amaurosis fugax,Amaurosis Fugax,194
+"amnesia, anterograde","Amnesia, Anterograde",188
+space motion sickness,Space Motion Sickness,181
+ageusia,Ageusia,174
+usher syndromes,Usher Syndromes,173
+gerstmann syndrome,Gerstmann Syndrome,169
+"hearing loss, functional","Hearing Loss, Functional",149
+"apraxia, ideomotor","Apraxia, Ideomotor",139
+"cardiac output, high","Cardiac Output, High",136
+"pain, referred","Pain, Referred",134
+neurobehavioral manifestations,Neurobehavioral Manifestations,129
+lethargy,Lethargy,126
+"hearing loss, mixed conductive-sensorineural","Hearing Loss, Mixed Conductive-Sensorineural",124
+dysuria,Dysuria,115
+chills,Chills,113
+tonic pupil,Tonic Pupil,106
+metatarsalgia,Metatarsalgia,93
+myokymia,Myokymia,87
+orthostatic intolerance,Orthostatic Intolerance,81
+pseudobulbar palsy,Pseudobulbar Palsy,78
+gait apraxia,Gait Apraxia,76
+livedo reticularis,Livedo Reticularis,73
+morning sickness,Morning Sickness,66
+synkinesis,Synkinesis,65
+purpura fulminans,Purpura Fulminans,63
+renal colic,Renal Colic,55
+stupor,Stupor,52
+"alexia, pure","Alexia, Pure",50
+"aphasia, conduction","Aphasia, Conduction",50
+urinoma,Urinoma,45
+eye pain,Eye Pain,42
+reticulocytosis,Reticulocytosis,32
+systolic murmurs,Systolic Murmurs,28
+deaf-blind disorders,Deaf-Blind Disorders,24
+susac syndrome,Susac Syndrome,22
+sweating sickness,Sweating Sickness,20
+primary progressive nonfluent aphasia,Primary Progressive Nonfluent Aphasia,19
+piriformis muscle syndrome,Piriformis Muscle Syndrome,18
+striae distensae,Striae Distensae,11
+alien hand syndrome,Alien Hand Syndrome,10
+necrolytic migratory erythema,Necrolytic Migratory Erythema,7
+body weight changes,Body Weight Changes,4
+slit ventricle syndrome,Slit Ventricle Syndrome,3
+infantile apparent life-threatening event,Infantile Apparent Life-Threatening Event,2
