@@ -143,7 +143,10 @@ make eval-experiments
   ```bash
   make delete-all-images
   ```
-- Or do both:
+⚠️ **Warning:**  
+`make it-all-stop-and-go-away` will stop *all* running Docker containers, remove volumes, networks, images, and caches across your Docker environment. 
+This can disrupt other services and shared resources. Use `make all-down` for a project-specific cleanup.
+
   ```bash
   make it-all-stop-and-go-away
   ```
